@@ -9,14 +9,14 @@ class ShiftCipherTest {
 
     @Test
     void testTC01() {
-        // Input: "SOFTWARE", key: 3 -> Expected: "VVIWZDUH"
+        // Input: "SOFTWARE", key: 3 -> Expected: "VRIWZDUH"
         String result = cipher.shift("SOFTWARE", 3);
         assertEquals("VRIWZDUH", result);
     }
 	
     @Test
     void testTC02() {
-        // Input: "software", key: 3 -> Expected: "VVIWZDUH"
+        // Input: "software", key: 3 -> Expected: "VRIWZDUH"
         String result = cipher.shift("software", 3);
         assertEquals("VRIWZDUH", result);
     }
@@ -30,7 +30,7 @@ class ShiftCipherTest {
 	
     @Test
     void testTC04() {
-        // Input: "No1", key: 2 -> Expected: "Pq3"
+        // Input: "No1", key: 2 -> Expected: "QR1"
         String result = cipher.shift("No1", 2);
         assertEquals("QR1", result); 
     }
